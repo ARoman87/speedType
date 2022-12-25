@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 body {
@@ -14,3 +15,81 @@ body {
   align-items: center;
   height: 80vh;
 }
+
+.title {
+  font-size: 60px;
+  margin-bottom: 45px;
+  text-align: center;
+  padding: 0 5px;
+}
+
+textarea {
+  width: 500px;
+  height: 300px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 0 0 30px 0;
+}
+
+h4 {
+  font-size: 30px;
+  text-align: center;
+}
+
+p {
+  margin: -40px 0 20px 0;
+  text-align: center;
+  padding: 0 20px;
+}
+
+button {
+  width: 300px;
+  height: 80px;
+  margin: 30px 0;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+  background-color: lightgreen;
+}
+
+button:disabled {
+  cursor: wait;
+  background-color: gray;
+}
+
+.wordCountContainer {
+  display: flex;
+  align-items: center;
+}
+
+.wordCount {
+  background-color: blue;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  border-radius: 14px;
+  font-size: 30px;
+  font-weight: 700;
+
+}
+
+@media only screen and (max-width: 800px) {
+  textarea {
+    width: 85%;
+  }
+
+  button {
+    width: 80%;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+}
+

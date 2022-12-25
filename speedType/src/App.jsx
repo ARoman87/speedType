@@ -7,7 +7,8 @@ function App() {
   
   return (
     <div className="main">
-      <h1>How fast can you type?</h1>
+      <h1 className="title">How fast can you type?</h1>
+      <p>(Type whatever you would like. Pick a song, a poem, or a quote. Test your skills.)</p>
       <textarea 
         value={text} 
         name="inputText" 
@@ -18,13 +19,18 @@ function App() {
       />
 
       <h4>Time Remaining: {timeRemaining}</h4>
+      
       <button 
         onClick={gameStart}
         disabled={start}
         >
           Start Game
         </button>
-      <h2>Word Count: {words}</h2>
+        <div className="wordCountContainer">
+        <h2>Word Count:</h2>
+        <span className="wordCount">{words}</span>
+        </div>
+      
     </div>
   )
 }
